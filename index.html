@@ -190,12 +190,15 @@ nav{padding:16px 12px 6px;display:flex;flex-direction:column;gap:4px}
 .zcl-hdr{display:flex;align-items:center;gap:14px;padding:13px 16px;cursor:pointer;user-select:none;transition:background .15s}
 .zcl-hdr:hover{background:var(--panel-2)}
 .zcl-hdr-left{flex:1;min-width:0}
-.zcl-nombre{font-size:13.5px;font-weight:800;letter-spacing:-0.2px;color:var(--text)}
-.zcl-count{font-size:10px;color:var(--faint);margin-top:1px;font-weight:600}
+.zcl-nombre{font-size:17px;font-weight:800;letter-spacing:-0.2px;color:var(--text)}
+.zcl-coach{font-size:13px;color:var(--brand-2);font-weight:600;margin-top:2px;display:flex;align-items:center;gap:5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.zcl-coach b{color:var(--text);font-weight:800}
+.zcl-coach-ico{font-size:12px;opacity:.8}
+.zcl-count{font-size:13px;color:var(--faint);margin-top:1px;font-weight:600}
 .zcl-mix{display:flex;height:6px;border-radius:4px;overflow:hidden;margin-top:8px;background:color-mix(in srgb,var(--text) 8%,transparent);max-width:280px}
 .zcl-mix i{height:100%}
 .zcl-resumen{display:flex;gap:5px;flex-wrap:wrap}
-.zcl-badge{font-size:10px;font-weight:800;padding:3px 7px;border-radius:6px;font-family:'Roboto Mono',monospace;white-space:nowrap}
+.zcl-badge{font-size:20px;font-weight:800;padding:3px 7px;border-radius:6px;font-family:'Roboto Mono',monospace;white-space:nowrap}
 .zcl-arrow{font-size:11px;color:var(--faint);transition:transform .25s;flex-shrink:0}
 .zcl-arrow.open{transform:rotate(180deg)}
 .zcl-body{display:none;border-top:1px solid var(--line);background:color-mix(in srgb,var(--text) 3%,transparent)}
@@ -204,12 +207,12 @@ nav{padding:16px 12px 6px;display:flex;flex-direction:column;gap:4px}
 .zcl-tienda-row:first-child{border-top:none}
 .zcl-tienda-row:hover{background:color-mix(in srgb,var(--brand-2) 8%,transparent)}
 .zcl-t-info{display:flex;flex-direction:column;min-width:0}
-.zcl-t-nombre{font-size:12.5px;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.zcl-t-eco{font-size:9px;color:var(--faint);font-family:'Roboto Mono',monospace;letter-spacing:.5px}
+.zcl-t-nombre{font-size:16px;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.zcl-t-eco{font-size:20px;color:var(--faint);font-family:'Roboto Mono',monospace;letter-spacing:.5px}
 .zcl-t-right{display:flex;align-items:center;gap:9px;flex-shrink:0}
 
 /* Badges */
-.t-badge{display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:25px;padding:0 7px;border-radius:7px;font-weight:800;font-size:12px;font-family:'Roboto Mono',monospace}
+.t-badge{display:inline-flex;align-items:center;justify-content:center;min-width:60px;height:42px;padding:0 13px;border-radius:8px;font-weight:800;font-size:26px;font-family:'Roboto Mono',monospace}
 .b-aaa{background:color-mix(in srgb,var(--aaa) 16%,transparent);color:var(--aaa);border:1px solid color-mix(in srgb,var(--aaa) 42%,transparent)}
 .b-aa{background:color-mix(in srgb,var(--aa) 16%,transparent);color:var(--aa);border:1px solid color-mix(in srgb,var(--aa) 42%,transparent)}
 .b-a{background:color-mix(in srgb,var(--a) 16%,transparent);color:var(--a);border:1px solid color-mix(in srgb,var(--a) 42%,transparent)}
@@ -217,7 +220,7 @@ nav{padding:16px 12px 6px;display:flex;flex-direction:column;gap:4px}
 .b-c{background:color-mix(in srgb,var(--c) 16%,transparent);color:var(--c);border:1px solid color-mix(in srgb,var(--c) 42%,transparent)}
 .b-d{background:color-mix(in srgb,var(--d) 16%,transparent);color:var(--d);border:1px solid color-mix(in srgb,var(--d) 42%,transparent)}
 .b-na{background:color-mix(in srgb,var(--text) 8%,transparent);color:var(--faint);border:1px solid var(--line)}
-.trend{display:inline-flex;align-items:center;gap:3px;font-size:10px;font-weight:800;font-family:'Roboto Mono',monospace;padding:2px 6px;border-radius:6px}
+.trend{display:inline-flex;align-items:center;gap:3px;font-size:15px;font-weight:800;font-family:'Roboto Mono',monospace;padding:2px 6px;border-radius:6px}
 .trend.up{color:var(--ok);background:color-mix(in srgb,var(--ok) 15%,transparent)}
 .trend.down{color:var(--bad);background:color-mix(in srgb,var(--bad) 15%,transparent)}
 .trend.same{color:var(--faint);background:color-mix(in srgb,var(--text) 7%,transparent)}
@@ -281,15 +284,15 @@ nav{padding:16px 12px 6px;display:flex;flex-direction:column;gap:4px}
 .detalle-card{background:var(--panel);border:1px solid var(--line-2);border-radius:18px;padding:22px;width:100%;max-width:500px;max-height:88vh;overflow-y:auto;box-shadow:var(--shadow);animation:pop .25s cubic-bezier(.2,.9,.3,1.2)}
 @keyframes pop{from{opacity:0;transform:scale(.96) translateY(8px)}to{opacity:1;transform:none}}
 .det-header{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:18px}
-.det-nombre{font-size:18px;font-weight:800;letter-spacing:-0.3px;line-height:1.2;color:var(--text)}
-.det-zona{font-size:11px;color:var(--muted);margin-top:3px}
+.det-nombre{font-size:24px;font-weight:800;letter-spacing:-0.3px;line-height:1.2;color:var(--text)}
+.det-zona{font-size:14px;color:var(--muted);margin-top:3px}
 .det-close{background:color-mix(in srgb,var(--text) 10%,transparent);border:none;color:var(--text);width:30px;height:30px;flex-shrink:0;border-radius:50%;cursor:pointer;font-size:17px;display:flex;align-items:center;justify-content:center;transition:background .15s}
 .det-close:hover{background:color-mix(in srgb,var(--bad) 25%,transparent)}
 .det-indicadores{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .det-ind{background:var(--panel-2);border:1px solid var(--line);border-radius:var(--radius-s);padding:13px}
-.det-ind-label{font-size:9px;color:var(--faint);font-weight:800;letter-spacing:.8px;margin-bottom:7px;display:flex;align-items:center;gap:5px}
-.det-ind-badge{font-size:21px;font-weight:800;font-family:'Roboto Mono',monospace;line-height:1}
-.det-ind-meta{font-size:9px;color:var(--faint);margin-top:5px;display:flex;align-items:center;gap:5px}
+.det-ind-label{font-size:12px;color:var(--faint);font-weight:800;letter-spacing:.8px;margin-bottom:7px;display:flex;align-items:center;gap:5px}
+.det-ind-badge{font-size:42px;font-weight:800;font-family:'Roboto Mono',monospace;line-height:1}
+.det-ind-meta{font-size:12px;color:var(--faint);margin-top:5px;display:flex;align-items:center;gap:5px}
 .det-dot{width:7px;height:7px;border-radius:50%;display:inline-block;flex-shrink:0}
 
 /* ── MÓVIL ─────────────────────────────────────────────── */
@@ -488,13 +491,13 @@ nav{padding:4px 0;gap:8px}
 .ghost-btn{border-radius:12px;padding:8px 11px;background:var(--panel-2)}
 .zcl-acordeon{border-radius:22px;box-shadow:var(--shadow-s);border-color:var(--line);overflow:hidden}
 .zcl-hdr{padding:16px 18px;background:linear-gradient(180deg,var(--panel),color-mix(in srgb,var(--panel-2) 55%,var(--panel)))}
-.zcl-nombre{font-size:15px}
-.zcl-count{font-size:10.5px}
+.zcl-nombre{font-size:17px}
+.zcl-count{font-size:13px}
 .zcl-resumen{gap:6px}
 .zcl-badge{border-radius:999px;padding:5px 8px}
 .zcl-tienda-row{padding:13px 18px;background:var(--panel)}
-.zcl-t-nombre{font-size:13px}
-.t-badge{height:28px;border-radius:10px}
+.zcl-t-nombre{font-size:16px}
+.t-badge{height:42px;border-radius:10px}
 .rank-grid{grid-template-columns:repeat(auto-fit,minmax(185px,1fr));gap:14px}
 .rank-col{border-radius:22px;box-shadow:var(--shadow-s)}
 .rank-col-header{padding:15px 12px;background:linear-gradient(180deg,var(--panel),var(--panel-2))}
@@ -882,7 +885,7 @@ img,svg,canvas{
     gap:4px;
   }
   .zcl-badge{
-    font-size:9px;
+    font-size:14px;
     padding:4px 6px;
   }
   .zcl-tienda-row{
@@ -1082,7 +1085,7 @@ body{
 @media(max-width:768px){
   body{font-size:15px;}
   .page-title{font-size:22px;}
-  .zcl-t-nombre{font-size:13px;}
+  .zcl-t-nombre{font-size:16px;}
   .filter-btn,.nav-btn{font-size:13px;}
 }
 
@@ -1294,6 +1297,7 @@ var CLASE_LABEL = {AAA:'Excelencia',AA:'Modelo',A:'Venta',B:'Regular',C:'Merma',
 // Colores oficiales de marca Neto + etiquetas (para gráficas por región)
 var BRAND = COLORS;
 var TIER_DESC = {AAA:'EXCELENCIA',AA:'MODELO',A:'VENTA',B:'REGULAR',C:'MERMA',D:'ROTACIÓN'};
+var COACHES = {"Boca Del Rio": "Romero Estrada Arazely", "Cardel": "Gamez Molinos Alejandra Monserrat", "Coatepec": "Karla Mercedes Fernandez Zavaleta", "Costa Esmeralda": "Guevara Rodriguez Mariela", "Heroica": "Liliana Sandoval Guevara", "Portuaria": "Castillo Romero Jaime", "Teziutlan": "Mota Retureta Lauro Omar", "Xalapa": "Velasco Bello Luis Enrique", "Alamo": "Jhair Alberto Mejia Fontes", "Gutierrez Zamora": "Guerrero Ferman Santos Javier", "Huauchinango": "Salvador Marquez Pozos", "Huejutla": "Salguero Flores Rubisel", "Papantla": "Quiroz Medina Omar Alejandro", "Poza Rica": "Hernandez Santes Carolina", "Tampico Norte": "Flores Trejo Abundio", "Tantoyuca": "Flores Aguilar Rafael", "Tuxpan": "Fernando García Hernández", "Alvarado": "Peralta Dominguez Alma Delia", "Cafetalera": "Viviana Arely Yescas Heleodoro", "Cordoba": "Lozano Sanchez Saul", "Cuenca": "Monfil Garcia Luis Gustavo", "Orizaba": "María De La Cruz Martínez Utrera", "Piñera": "Vanessa Sanchez Basulto", "Puerto": "Sandoval Garcia Guadalupe", "Tuxtepec": "Ruben Guizar Aguirre", "Tuxtlas": "Hernandez Hernandez David"};
 var ORDEN = {AAA:0,AA:1,A:2,B:3,C:4,D:5};
 var VERDE = 'var(--ok)', AMBAR = 'var(--warn)', ROJO = 'var(--bad)', GRIS = 'var(--neutral)';
 
@@ -1414,7 +1418,24 @@ function renderGeneral(){
     if (!grupos[z]) grupos[z] = [];
     grupos[z].push(s);
   });
-  var nombres = Object.keys(grupos).sort();
+  var nombres = Object.keys(grupos).sort(function(a, b){
+    function score(z){
+      var ts = grupos[z];
+      var tot = ts.length || 1;
+      var pts = 0;
+      ts.forEach(function(s){
+        var g = claseGlobal(clasif[s.id]);
+        if      (g==='AAA') pts += 600;
+        else if (g==='AA')  pts += 500;
+        else if (g==='A')   pts += 400;
+        else if (g==='B')   pts += 300;
+        else if (g==='C')   pts += 200;
+        else if (g==='D')   pts += 100;
+      });
+      return pts / tot;
+    }
+    return score(b) - score(a);
+  });
   gruposActuales = nombres;
 
   if (nombres.length === 0){
@@ -1453,6 +1474,7 @@ function renderGeneral(){
       '<div class="zcl-hdr" onclick="toggleGrupo('+i+')">'+
         '<div class="zcl-hdr-left">'+
           '<div class="zcl-nombre">'+z+'</div>'+
+          (COACHES[z] ? '<div class="zcl-coach"><span class="zcl-coach-ico">\uD83D\uDC64</span> Coach: <b>'+COACHES[z]+'</b></div>' : '')+
           '<div class="zcl-count">'+tiendas.length+' tiendas</div>'+
           '<div class="zcl-mix">'+mix+'</div>'+
         '</div>'+
